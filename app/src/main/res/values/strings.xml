@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name" translatable="false">My Application</string>
+    <string name="username" translatable="false">Username</string>
+    <string name="sign_in" translatable="false">Sign in</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="login" translatable="false">LOGIN</string>
+    <string name="forgot_password" translatable="false">Forgot password?</string>
+    <string name="or_sign_in_with" translatable="false">or sign in with</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">REGISTER</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="welcome_home">WELCOME Home</string>
+</resources>

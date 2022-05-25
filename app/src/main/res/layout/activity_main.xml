@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:id="@+id/register"
+        android:text="@string/sign_in"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold">
+    </TextView>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:background="#30ffffff"
+        android:layout_margin="10dp"
+        android:hint="@string/username"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"
+        android:drawablePadding="28dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:background="#30ffffff"
+        android:layout_margin="10dp"
+        android:hint="@string/password"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="28dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <EditText
+        android:id="@+id/repassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:background="#30ffffff"
+        android:layout_margin="10dp"
+        android:hint="@string/confirm_password"
+        android:drawableLeft="@drawable/ic_baseline_info_24"
+        android:drawablePadding="28dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/repassword"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/register"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@id/signin"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/black"
+        android:text="@string/login"
+        android:textSize="20sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/others"
+        android:layout_above="@id/socialicons"
+        android:text="@string/or_sign_in_with"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/socialicons"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@id/signup"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="82dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/google" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="20dp"
+            android:src="@drawable/twitter" />
+    </LinearLayout>
+</RelativeLayout>
